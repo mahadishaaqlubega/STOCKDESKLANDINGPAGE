@@ -152,17 +152,18 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
-  font-size: 13px; font-weight: 600; letter-spacing: 0.02em;
-  color: var(--accent);
+  padding: 5px 12px 5px 10px; border-radius: 999px;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.01em;
+  color: var(--accent); background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
 }
-.eyebrow::before { content: ""; width: 18px; height: 1.5px; background: currentColor; border-radius: 2px; }
+.eyebrow::before { content: ""; width: 6px; height: 6px; background: currentColor; border-radius: 50%; box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 22%, transparent); }
 
 .section { padding: 96px 0; }
 @media (max-width: 767px) { .section { padding: 72px 0; } }
 
 .section-head { max-width: 720px; margin-bottom: 56px; }
 .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
-.section-head.center .eyebrow::after { content: ""; width: 18px; height: 1.5px; background: currentColor; border-radius: 2px; }
 .section-head h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); margin-top: 16px; }
 .section-head p { margin-top: 18px; font-size: clamp(1.02rem, 1.4vw, 1.15rem); color: var(--text-2); max-width: 620px; }
 .section-head.center p { margin-left: auto; margin-right: auto; }
