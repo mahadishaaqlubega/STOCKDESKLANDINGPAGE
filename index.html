@@ -7,6 +7,8 @@
   <meta name="description" content="Sell from any phone or computer, watch stock update with every sale, collect what customers owe and see your real profit. Built for shops in Uganda. First month free." />
   <link rel="canonical" href="https://www.stockdeskinventory.com/" />
   <meta name="theme-color" content="#070b14" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:locale" content="en_UG" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="StockDesk" />
@@ -26,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&display=swap" />
   <link rel="preload" as="image" href="assets/shots/dashboard-dark.webp" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
   <script>
     document.documentElement.classList.remove('no-js');
     try { var t = localStorage.getItem('sd-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -43,6 +45,104 @@
     "description": "Point of sale and stock control for shops in Uganda. Works offline, prices in UGX, receipts on any printer or WhatsApp.",
     "offers": { "@type": "Offer", "price": "15000", "priceCurrency": "UGX", "description": "Starter plan, monthly, after a 1-month free trial" }
   }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the first month really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every new shop gets one month with every feature, and you don't need a card or Mobile Money to start. Near the end of the month we'll remind you to pick a plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after the free month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose a plan and pay monthly with MTN Mobile Money or Airtel Money. If you decide not to continue, your products, sales and customer records are kept safe, so you can pick up where you left off."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a computer or special equipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. StockDesk runs in the browser on any Android phone, iPhone, tablet or computer. A receipt printer and a USB barcode scanner are optional, and the ones you can buy locally work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the internet goes off?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep selling. Sales are saved on the device and sent automatically when the connection returns. Each sale carries its own reference, so nothing is counted twice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I print receipts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, on 58mm or 80mm thermal printers, or on A4 and PDF. You can also send the customer a receipt link on WhatsApp. Your shop name and logo appear at the top."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I already have my products in a notebook or Excel. Do I start over?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If they're in Excel, import them in one go with prices, costs and quantities. If they're in a notebook, add the items you sell most first. You don't need everything in on day one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my staff steal or give big discounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each staff member has their own login, and every sale is tied to them. You set the biggest discount cashiers can give, StockDesk refuses sales below cost, and the activity log shows who changed what."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who can see my shop's data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only the people you add to your shop, and only what their role allows. We don't sell your data. Read more in our privacy policy."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "StockDesk Inventory",
+  "url": "https://www.stockdeskinventory.com/",
+  "logo": "https://www.stockdeskinventory.com/assets/icon-512.png",
+  "email": "hello@stockdeskinventory.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "UG"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+256742226839",
+      "contactType": "customer support",
+      "areaServed": "UG",
+      "availableLanguage": [
+        "English",
+        "Luganda"
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -729,11 +829,11 @@
 
   <dialog class="video-modal" id="videoModal" aria-label="StockDesk sale walkthrough">
     <button type="button" class="icon-btn video-close" id="videoClose" aria-label="Close video"><svg><use href="#i-close"/></svg></button>
-    <video id="saleVideo" src="assets/video/sale.webm" poster="assets/video/poster.webp" controls playsinline muted preload="none"></video>
+    <video id="saleVideo" poster="assets/video/poster.webp" controls playsinline muted preload="none"><source src="assets/video/sale.mp4" type="video/mp4" /></video>
   </dialog>
 
   <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
   <script defer src="/_vercel/insights/script.js"></script>
-  <script src="main.js" defer></script>
+  <script src="main.js?v=3" defer></script>
 </body>
 </html>
