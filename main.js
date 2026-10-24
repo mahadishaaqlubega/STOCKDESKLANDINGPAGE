@@ -134,7 +134,7 @@
     "faq.eyebrow": "Ebibuuzo", "faq.h2": "Ebibuuzo n'eby'okuddamu.", "faq.p": "Tolabye ky'onoonya? Tuwandiikire ku WhatsApp, omuntu wa ddala ajja kukuddamu.",
     "custom.eyebrow": "Pulogulaamu ez'enjawulo", "custom.h2": "Wetaaga sisitemu ekoleddwa ku lwa bizinensi yo?",
     "custom.p": "Ttiimu eri emabega wa StockDesk ekola ne pulogulaamu ez'enjawulo. Tubuulire bizinensi yo bw'ekola, tujja kukukolera sisitemu egigwanira.",
-    "custom.cta": "Tubuulire by'oyagala",
+    "custom.cta": "Tuwandiikire ku WhatsApp",
     "final.h2": "Manya namba zo nga tonnaggalawo <span class=\"grad\">leero.</span>", "final.p": "Kola edduuka lyo mu ddakiika bbiri. Omwezi ogusooka tukuwa bwereere.",
     "final.help": "Funa obuyambi okutandika", "sticky.b": "Omwezi ogusooka bwereere", "sticky.s": "Tewetaaga kaadi", "sticky.cta": "Tandika"
   };
