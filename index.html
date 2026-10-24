@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&display=swap" />
   <link rel="preload" as="image" href="assets/shots/dashboard-dark.webp" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
   <script>
     document.documentElement.classList.remove('no-js');
     try { var t = localStorage.getItem('sd-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -97,6 +97,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "If they're in Excel, import them in one go with prices, costs and quantities. If they're in a notebook, add the items you sell most first. You don't need everything in on day one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I sell to both retailers and wholesalers. Can they pay different prices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Give each product a retail and a wholesale price, and mark customers as retail or wholesale. You can also give a loyal customer a percentage off, or agree a special price on a product just for them. The till applies the right price automatically, and staff can't go below the wholesale price."
       }
     },
     {
@@ -516,6 +524,22 @@
             </div>
           </article>
 
+          <article class="card span-6 reveal pricing-card">
+            <div>
+              <span class="tag">Retail, wholesale &amp; loyalty prices</span>
+              <h3>The right price for every customer, automatically</h3>
+              <p>Set a retail and a wholesale price on each product. Mark customers as wholesale, give loyal ones a percentage off, or agree a special price per product. The till picks the right price on its own, and staff can never sell below the wholesale price.</p>
+            </div>
+            <div class="demo">
+              <div class="mini price-table">
+                <div class="mini-row head"><span>Cement 50kg</span><span>Price at the till</span></div>
+                <div class="mini-row"><span>Walk-in customer</span><b class="num">UGX 40,000</b></div>
+                <div class="mini-row"><span>Lydia <span class="badge badge-accent">Loyalty 5%</span></span><b class="num">UGX 38,000</b></div>
+                <div class="mini-row"><span>Ben Builders <span class="badge badge-accent">Special price</span></span><b class="num">UGX 36,000</b></div>
+                <div class="mini-row"><span>Okot Traders <span class="badge badge-ok">Wholesale</span></span><b class="num">UGX 34,000</b></div>
+              </div>
+            </div>
+          </article>
           <article class="card small span-2 reveal">
             <span class="ico"><svg><use href="#i-truck"/></svg></span>
             <h3>Suppliers &amp; purchases</h3>
@@ -571,7 +595,7 @@
           <article class="shop reveal"><span class="ico"><svg><use href="#i-phone"/></svg></span><h3>Phone &amp; electronics shops</h3><p>Sell accessories and airtime, and charge for repairs as services with the price agreed at the counter.</p></article>
           <article class="shop reveal"><span class="ico"><svg><use href="#i-shirt"/></svg></span><h3>Boutiques &amp; fashion</h3><p>Discounts with limits, returns handled properly, and receipts sent to customers on WhatsApp.</p></article>
           <article class="shop reveal"><span class="ico"><svg><use href="#i-scissors"/></svg></span><h3>Salons &amp; barbers</h3><p>Sell services and products together and see what each stylist brought in today.</p></article>
-          <article class="shop reveal"><span class="ico"><svg><use href="#i-cup"/></svg></span><h3>Restaurants, cafes &amp; bars</h3><p>Quick checkout, split payments between cash and Mobile Money, and stock of drinks kept honest.</p></article>
+          <article class="shop reveal"><span class="ico"><svg><use href="#i-truck"/></svg></span><h3>Wholesalers &amp; distributors</h3><p>Sell to shops and walk-in buyers at different prices, with credit limits and wholesale prices that apply automatically.</p></article>
           <article class="shop shop-cta reveal"><h3>Don't see your shop?</h3><p>If you sell over a counter, it will work. Ask us on WhatsApp.</p><a class="btn btn-soft" href="https://wa.me/256742226839?text=Hi%20StockDesk%2C%20will%20it%20work%20for%20my%20shop%3F" target="_blank" rel="noopener"><svg style="color:#25d366"><use href="#i-wa"/></svg>Ask us</a></article>
         </div>
       </div>
@@ -646,6 +670,7 @@
               <li><svg><use href="#i-check"/></svg>Stock, low-stock alerts and stock counts</li>
               <li><svg><use href="#i-check"/></svg>Receipts on any printer or WhatsApp</li>
               <li><svg><use href="#i-check"/></svg>Sales and profit reports</li>
+              <li><svg><use href="#i-check"/></svg>Retail, wholesale and loyalty prices</li>
             </ul>
           </div>
 
@@ -726,6 +751,10 @@
           <details>
             <summary>I already have my products in a notebook or Excel. Do I start over?<span class="pm" aria-hidden="true"></span></summary>
             <div class="ans"><p>If they're in Excel, import them in one go with prices, costs and quantities. If they're in a notebook, add the items you sell most first. You don't need everything in on day one.</p></div>
+          </details>
+          <details>
+            <summary>I sell to both retailers and wholesalers. Can they pay different prices?<span class="pm" aria-hidden="true"></span></summary>
+            <div class="ans"><p>Yes. Give each product a retail and a wholesale price, and mark customers as retail or wholesale. You can also give a loyal customer a percentage off, or agree a special price on a product just for them. The till applies the right price automatically, and staff can't go below the wholesale price.</p></div>
           </details>
           <details>
             <summary>Can my staff steal or give big discounts?<span class="pm" aria-hidden="true"></span></summary>
@@ -834,6 +863,6 @@
 
   <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
   <script defer src="/_vercel/insights/script.js"></script>
-  <script src="main.js?v=4" defer></script>
+  <script src="main.js?v=5" defer></script>
 </body>
 </html>
