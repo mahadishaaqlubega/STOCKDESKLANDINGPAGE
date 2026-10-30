@@ -6,7 +6,7 @@
   <title>StockDesk: Point of sale and stock control for shops in Uganda</title>
   <meta name="description" content="Sell from any phone or computer, watch stock update with every sale, collect what customers owe and see your real profit. Built for shops in Uganda. First month free." />
   <link rel="canonical" href="https://www.stockdeskinventory.com/" />
-  <meta name="theme-color" content="#070b14" />
+  <meta name="theme-color" content="#0b1510" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta property="og:locale" content="en_UG" />
 
@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&display=swap" />
   <link rel="preload" as="image" href="assets/shots/dashboard-dark.webp" />
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=6" />
   <script>
     document.documentElement.classList.remove('no-js');
     try { var t = localStorage.getItem('sd-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -254,9 +254,9 @@
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container">
         <div class="hero-copy">
-          <span class="pill"><b data-i18n="hero.new">New</b> <span data-i18n="hero.pill">Every new shop gets its first month free</span></span>
-          <h1><span data-i18n="hero.h1a">Every sale counted.</span><br /><span class="grad" data-i18n="hero.h1b">Every shilling accounted for.</span></h1>
-          <p class="hero-sub" data-i18n="hero.sub">StockDesk is the till, the stock book and the profit report for your shop, in one app. Sell from any phone or computer, and know exactly what you have, who owes you, and what you made today.</p>
+          <span class="pill ledger-rule" data-i18n="hero.pill">Every new shop gets its first month free</span>
+          <h1 data-i18n="hero.h1">The till, stock book and profit report for your shop.</h1>
+          <p class="hero-sub" data-i18n="hero.sub">Record every sale, keep count of your stock, and see what you made today. StockDesk runs on the phone or computer you already have, even when the network is off.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary btn-lg" href="https://app.stockdeskinventory.com/login?mode=signup">
               <span data-i18n="cta.main">Start your free month</span> <svg class="btn-arrow"><use href="#i-arrow"/></svg>
@@ -266,9 +266,9 @@
             </button>
           </div>
           <p class="hero-note">
-            <span><svg><use href="#i-check"/></svg><span data-i18n="hero.n1">No card needed</span></span>
-            <span><svg><use href="#i-check"/></svg><span data-i18n="hero.n2">Set up in an afternoon</span></span>
-            <span><svg><use href="#i-check"/></svg><span data-i18n="hero.n3">Pay later with MTN MoMo or Airtel Money</span></span>
+            <span><span data-i18n="hero.n1">No card needed</span></span>
+            <span><span data-i18n="hero.n2">Set up in an afternoon</span></span>
+            <span><span data-i18n="hero.n3">Pay later with MTN MoMo or Airtel Money</span></span>
           </p>
         </div>
 
@@ -287,11 +287,11 @@
       <div class="facts">
         <div class="container">
           <ul>
-            <li><svg><use href="#i-wifi-off"/></svg><span data-i18n="facts.1">Keeps selling when the internet drops</span></li>
-            <li><svg><use href="#i-wallet"/></svg><span data-i18n="facts.2">Cash, Mobile Money, card, credit or split</span></li>
-            <li><svg><use href="#i-printer"/></svg><span data-i18n="facts.3">Receipts on 58mm, 80mm, A4 or WhatsApp</span></li>
-            <li><svg><use href="#i-sheet"/></svg><span data-i18n="facts.4">Bring your product list from Excel</span></li>
-            <li><svg><use href="#i-phone"/></svg><span data-i18n="facts.5">Runs on the phone you already own</span></li>
+            <li><span data-i18n="facts.1">Keeps selling when the internet drops</span></li>
+            <li><span data-i18n="facts.2">Cash, Mobile Money, card, credit or split</span></li>
+            <li><span data-i18n="facts.3">Receipts on 58mm, 80mm, A4 or WhatsApp</span></li>
+            <li><span data-i18n="facts.4">Bring your product list from Excel</span></li>
+            <li><span data-i18n="facts.5">Runs on the phone you already own</span></li>
           </ul>
         </div>
       </div>
@@ -300,18 +300,17 @@
     <!-- ============ TOUR ============ -->
     <section class="section" id="tour">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow" data-i18n="tour.eyebrow">The product</span>
+        <div class="section-head center ledger reveal">
           <h2 data-i18n="tour.h2">One app for the whole shop.</h2>
-          <p data-i18n="tour.p">From the first sale in the morning to the profit figure at closing, every number lives in one place and updates the moment something happens.</p>
+          <p data-i18n="tour.p">Sales, stock, money customers owe you and profit, on one screen that updates with every sale.</p>
         </div>
 
         <div class="tour reveal">
           <div class="tour-tabs" role="tablist" aria-label="Product screens">
-            <button class="tour-tab" role="tab" id="tab-dash" aria-controls="panel-dash" aria-selected="true"><svg><use href="#i-grid"/></svg>Dashboard</button>
-            <button class="tour-tab" role="tab" id="tab-pos" aria-controls="panel-pos" aria-selected="false" tabindex="-1"><svg><use href="#i-cart"/></svg>Point of sale</button>
-            <button class="tour-tab" role="tab" id="tab-cust" aria-controls="panel-cust" aria-selected="false" tabindex="-1"><svg><use href="#i-users"/></svg>Customers &amp; credit</button>
-            <button class="tour-tab" role="tab" id="tab-rep" aria-controls="panel-rep" aria-selected="false" tabindex="-1"><svg><use href="#i-chart"/></svg>Reports</button>
+            <button class="tour-tab" role="tab" id="tab-dash" aria-controls="panel-dash" aria-selected="true">Dashboard</button>
+            <button class="tour-tab" role="tab" id="tab-pos" aria-controls="panel-pos" aria-selected="false" tabindex="-1">Point of sale</button>
+            <button class="tour-tab" role="tab" id="tab-cust" aria-controls="panel-cust" aria-selected="false" tabindex="-1">Customers &amp; credit</button>
+            <button class="tour-tab" role="tab" id="tab-rep" aria-controls="panel-rep" aria-selected="false" tabindex="-1">Reports</button>
           </div>
 
           <div class="tour-panel is-in" role="tabpanel" id="panel-dash" aria-labelledby="tab-dash">
@@ -320,9 +319,9 @@
               <img class="shot-dark" src="assets/shots/dashboard-dark.webp" width="2400" height="1500" loading="lazy" alt="Dashboard with sales, profit, stock and money owed at a glance" />
             </div>
             <div class="tour-caption">
-              <div><h3>Your day on one screen</h3><p>Orders, revenue and profit for today and this month, with the change against last month.</p></div>
-              <div><h3>Warnings before problems</h3><p>See what is at its reorder level and how much customers owe, the moment you open the app.</p></div>
-              <div><h3>What actually sells</h3><p>Your best sellers and a seven-day sales curve, so you stock what moves.</p></div>
+              <div><h3>Today and this month</h3><p>Orders, sales and profit, compared with last month.</p></div>
+              <div><h3>Low stock and money owed</h3><p>Items at their reorder level and what customers owe, as soon as you open the app.</p></div>
+              <div><h3>Best sellers</h3><p>Your top products and the last seven days of sales, so you restock what sells.</p></div>
             </div>
           </div>
 
@@ -332,8 +331,8 @@
               <img class="shot-dark" src="assets/shots/pos-dark.webp" width="2400" height="1500" loading="lazy" alt="Point of sale with products, a cart and payment options" />
             </div>
             <div class="tour-caption">
-              <div><h3>Tap, scan, charge</h3><p>Search, tap a product or use a USB barcode scanner. Stock left is shown on every item.</p></div>
-              <div><h3>Every way to pay</h3><p>Cash, Mobile Money, card, credit on a customer's account, or split across several.</p></div>
+              <div><h3>Search, tap or scan</h3><p>Find a product by name, tap it, or use a USB barcode scanner. Stock left shows on every item.</p></div>
+              <div><h3>Cash, Mobile Money, card or credit</h3><p>Or split one bill between them.</p></div>
               <div><h3>Hold a sale</h3><p>Park a customer's basket, serve the next person, and come back to it.</p></div>
             </div>
           </div>
@@ -344,9 +343,9 @@
               <img class="shot-dark" src="assets/shots/customers-dark.webp" width="2400" height="1500" loading="lazy" alt="Customers list with balances owed, WhatsApp reminders and receive payment buttons" />
             </div>
             <div class="tour-caption">
-              <div><h3>Credit with limits</h3><p>Set how much each customer may owe and when it is due. StockDesk stops a sale that goes over.</p></div>
-              <div><h3>Reminders on WhatsApp</h3><p>One tap sends a polite reminder with the exact balance to the customer's WhatsApp.</p></div>
-              <div><h3>Part payments</h3><p>Record payments as they come in and print a statement whenever a customer asks.</p></div>
+              <div><h3>Credit limits and due dates</h3><p>Set how much each customer may owe and when. StockDesk stops a sale that would go over.</p></div>
+              <div><h3>WhatsApp reminders</h3><p>One tap sends the customer a reminder with the exact balance.</p></div>
+              <div><h3>Part payments</h3><p>Record payments as they come in and print a statement when a customer asks.</p></div>
             </div>
           </div>
 
@@ -356,9 +355,9 @@
               <img class="shot-dark" src="assets/shots/reports-dark.webp" width="2400" height="1500" loading="lazy" alt="Reports with revenue, profit, orders, hourly sales and top products" />
             </div>
             <div class="tour-caption">
-              <div><h3>Profit you can trust</h3><p>Worked out from what you paid for each item when it sold, after discounts and refunds.</p></div>
-              <div><h3>Sales by the hour</h3><p>Know your busy hours and plan staff and restocking around them.</p></div>
-              <div><h3>Who sold what</h3><p>Revenue per cashier, so good work is easy to see and gaps are easy to find.</p></div>
+              <div><h3>Profit from real costs</h3><p>Worked out from what each item cost you when it sold, after discounts and refunds.</p></div>
+              <div><h3>Sales by the hour</h3><p>See your busy hours and plan staff and restocking around them.</p></div>
+              <div><h3>Sales per cashier</h3><p>See how much each member of staff sold, day by day.</p></div>
             </div>
           </div>
         </div>
@@ -369,8 +368,7 @@
     <!-- ============ TRY THE TILL ============ -->
     <section class="section try" id="try" style="padding-top:24px">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow" data-i18n="try.eyebrow">Try it</span>
+        <div class="section-head center ledger reveal">
           <h2 data-i18n="try.h2">Ring up a sale right here.</h2>
           <p data-i18n="try.p">Tap products, pick how the customer pays, and charge. Watch stock and profit update like they do in the real app. No sign-up needed.</p>
         </div>
@@ -406,17 +404,16 @@
     <!-- ============ FEATURES ============ -->
     <section class="section" id="features" style="padding-top:24px">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow" data-i18n="feat.eyebrow">Features</span>
-          <h2 data-i18n="feat.h2" data-i18n-html>Built for a real counter,<br />not a demo.</h2>
-          <p data-i18n="feat.p">Slow networks, customers who pay later, staff who come and go. StockDesk was shaped by how shops here actually run.</p>
+        <div class="section-head ledger reveal">
+          <h2 data-i18n="feat.h2">Made for the way shops here work.</h2>
+          <p data-i18n="feat.p">It keeps selling when the network drops, keeps track of customers who buy on credit, and shows you what each member of staff did.</p>
         </div>
 
         <div class="bento">
           <article class="card span-4 reveal">
             <span class="tag">Offline selling</span>
-            <h3>The internet goes. The till doesn't.</h3>
-            <p>Keep ringing sales when the network drops. Each sale is saved on the device and sent the moment you're back online, with nothing counted twice.</p>
+            <h3>Keeps selling when the network drops</h3>
+            <p>Each sale is saved on the device and sent when the connection comes back. Nothing is counted twice.</p>
             <div class="demo">
               <div class="offline-demo">
                 <div class="mini">
@@ -442,8 +439,8 @@
 
           <article class="card span-2 reveal">
             <span class="tag">Payments</span>
-            <h3>However they pay</h3>
-            <p>Split one bill across cash and Mobile Money, or put it on a customer's account.</p>
+            <h3>Cash, Mobile Money, card or credit</h3>
+            <p>Split one bill between cash and Mobile Money, or put it on a customer's account.</p>
             <div class="demo">
               <div class="chips">
                 <span class="chip">Cash</span>
@@ -456,9 +453,9 @@
           </article>
 
           <article class="card span-2 reveal">
-            <span class="tag">Stock alerts</span>
-            <h3>Low stock, flagged early</h3>
-            <p>Set a reorder level per product. StockDesk tells you before the shelf is empty.</p>
+            <span class="tag">Stock</span>
+            <h3>A warning before the shelf is empty</h3>
+            <p>Set a reorder level for each product. StockDesk tells you when stock reaches it.</p>
             <div class="demo">
               <div class="mini">
                 <div class="mini-row"><span>Sunrise Cooking Oil 1L</span><span class="badge badge-warn num">3 left</span></div>
@@ -470,8 +467,8 @@
 
           <article class="card span-2 reveal">
             <span class="tag">Receipts</span>
-            <h3>Receipts your way</h3>
-            <p>Print on any printer your device can use, or send a PDF link on WhatsApp. Your logo on top.</p>
+            <h3>Printed or sent on WhatsApp</h3>
+            <p>Print on 58mm, 80mm or A4 paper, or send the customer a PDF on WhatsApp, with your logo at the top.</p>
             <div class="demo">
               <div class="receipt" aria-hidden="true">
                 <div class="c"><b>KATO GENERAL STORE</b><br />Kampala Road</div>
@@ -480,7 +477,7 @@
                 <div class="r"><span>Cooking Oil 1L</span><span>12,000</span></div>
                 <div class="r"><span>Coca-Cola x2</span><span>4,000</span></div>
                 <hr />
-                <div class="r"><b>TOTAL UGX</b><b>48,000</b></div>
+                <div class="r total"><b>TOTAL UGX</b><b>48,000</b></div>
               </div>
               <div class="receipt-sizes"><span class="chip">58mm</span><span class="chip on">80mm</span><span class="chip">A4</span></div>
             </div>
@@ -488,8 +485,8 @@
 
           <article class="card span-2 reveal">
             <span class="tag">Customer credit</span>
-            <h3>Credit you can collect</h3>
-            <p>Limits, due dates and part payments for every customer, with reminders sent on WhatsApp.</p>
+            <h3>Credit with limits and due dates</h3>
+            <p>Record part payments as they come in, and send reminders on WhatsApp with the exact balance.</p>
             <div class="demo">
               <div class="mini">
                 <div class="mini-row"><div><b>Nakato Sarah</b><div class="muted">Due in 9 days</div></div><b class="num" style="color:var(--warn)">UGX 239,500</b></div>
@@ -500,21 +497,21 @@
 
           <article class="card span-3 reveal">
             <span class="tag">Profit</span>
-            <h3>See real profit, not just sales</h3>
-            <p>Every sale remembers what the item cost you at that moment, so profit stays right even when supplier prices change. Expenses sit right next to it.</p>
+            <h3>Profit worked out for you</h3>
+            <p>Each sale keeps what the item cost you that day, so profit stays right when supplier prices change. Your expenses are on the same screen.</p>
             <div class="demo">
               <div class="bar-demo">
                 <div><div class="lbl"><b>Sales this month</b><span class="num">UGX 7,018,500</span></div><div class="bar"><i style="--w:100%"></i></div></div>
-                <div><div class="lbl"><b>Cost of goods sold</b><span class="num">UGX 5,540,300</span></div><div class="bar"><i style="--w:79%;--c:#94a3b8"></i></div></div>
-                <div><div class="lbl"><b>Gross profit</b><span class="num">UGX 1,478,200</span></div><div class="bar"><i style="--w:21%;--c:#22c55e"></i></div></div>
+                <div><div class="lbl"><b>Cost of goods sold</b><span class="num">UGX 5,540,300</span></div><div class="bar"><i style="--w:79%;--c:#b9b5a8"></i></div></div>
+                <div class="ledger-total"><div class="lbl"><b>Gross profit</b><span class="num">UGX 1,478,200</span></div><div class="bar"><i style="--w:21%;--c:var(--brass)"></i></div></div>
               </div>
             </div>
           </article>
 
           <article class="card span-3 reveal">
-            <span class="tag">Team &amp; control</span>
-            <h3>Your shop, even when you're away</h3>
-            <p>Every cashier signs in with their own account. Set a discount limit, block sales below cost, and see an activity log of who did what.</p>
+            <span class="tag">Staff</span>
+            <h3>Each cashier signs in separately</h3>
+            <p>Set the biggest discount staff can give, block sales below cost, and see an activity log of who did what.</p>
             <div class="demo">
               <div class="mini avatars">
                 <div class="person"><span class="av">K</span><span class="who"><b>Kato Moses</b><span>Owner, sees everything</span></span><span class="badge badge-accent">Admin</span></div>
@@ -527,7 +524,7 @@
           <article class="card span-6 reveal pricing-card">
             <div>
               <span class="tag">Retail, wholesale &amp; loyalty prices</span>
-              <h3>The right price for every customer, automatically</h3>
+              <h3>The right price for each customer</h3>
               <p>Set a retail and a wholesale price on each product. Mark customers as wholesale, give loyal ones a percentage off, or agree a special price per product. The till picks the right price on its own, and staff can never sell below the wholesale price.</p>
             </div>
             <div class="demo">
@@ -541,39 +538,32 @@
             </div>
           </article>
           <article class="card small span-2 reveal">
-            <span class="ico"><svg><use href="#i-truck"/></svg></span>
-            <h3>Suppliers &amp; purchases</h3>
+            <h3>Suppliers and purchases</h3>
             <p>Record goods received, what you owe each supplier, and every payment you make.</p>
           </article>
           <article class="card small span-2 reveal">
-            <span class="ico"><svg><use href="#i-sheet"/></svg></span>
-            <h3>Excel in, Excel out</h3>
-            <p>Import your product and customer lists in minutes. Export sales whenever your accountant asks.</p>
+            <h3>Excel import and export</h3>
+            <p>Bring in your product and customer lists, and export sales when your accountant asks.</p>
           </article>
           <article class="card small span-2 reveal">
-            <span class="ico"><svg><use href="#i-clipboard"/></svg></span>
-            <h3>Stock counts &amp; returns</h3>
+            <h3>Stock counts and returns</h3>
             <p>Count the shelf, see what is missing, and handle returns so stock and money stay right.</p>
           </article>
           <article class="card small span-3 reveal">
-            <span class="ico"><svg><use href="#i-wrench"/></svg></span>
-            <h3>Sell services too</h3>
-            <p>Repairs, salon work, delivery or labour. Sell them with no stock to track, at a fixed price or one agreed at the counter.</p>
+            <h3>Services as well as goods</h3>
+            <p>Repairs, salon work, delivery or labour, with no stock to track. Use a fixed price or agree one at the counter.</p>
           </article>
           <article class="card small span-3 reveal">
-            <span class="ico"><svg><use href="#i-moonset"/></svg></span>
-            <h3>Close the day properly</h3>
-            <p>Every business day is closed on Kampala time with its totals saved, so you can look back at any day and see exactly how it went.</p>
+            <h3>Till count at closing</h3>
+            <p>Open the till with a float and count it at the end of the day. StockDesk shows straight away whether the cash is short or over.</p>
           </article>
           <article class="card small span-3 reveal">
-            <span class="ico"><svg><use href="#i-lock"/></svg></span>
-            <h3>Locked-down accounts</h3>
-            <p>Accounts lock after repeated wrong passwords, a password reset signs out old sessions, and you can sign out every device in one tap.</p>
+            <h3>Account security</h3>
+            <p>Accounts lock after repeated wrong passwords, and you can sign out every device at once.</p>
           </article>
           <article class="card small span-3 reveal">
-            <span class="ico"><svg><use href="#i-download"/></svg></span>
-            <h3>Installs like an app</h3>
-            <p>Add StockDesk to your phone's home screen straight from the browser. No Play Store, no big download, always up to date.</p>
+            <h3>On your home screen</h3>
+            <p>Install StockDesk from the browser. There is nothing to download from the Play Store, and it updates itself.</p>
           </article>
         </div>
       </div>
@@ -583,19 +573,18 @@
     <!-- ============ SHOP TYPES ============ -->
     <section class="section shops" id="shops" style="padding-top:24px">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow" data-i18n="shops.eyebrow">Who it's for</span>
+        <div class="section-head center ledger reveal">
           <h2 data-i18n="shops.h2">Made for your kind of shop.</h2>
           <p data-i18n="shops.p">If you sell over a counter, StockDesk fits. Here is how shops like yours use it.</p>
         </div>
         <div class="shop-grid">
-          <article class="shop reveal"><span class="ico"><svg><use href="#i-store"/></svg></span><h3>Supermarkets &amp; general stores</h3><p>Hundreds of fast-moving items, barcode scanning and low-stock alerts before the shelf runs dry.</p></article>
-          <article class="shop reveal"><span class="ico"><svg><use href="#i-hammer"/></svg></span><h3>Hardware shops</h3><p>Sell on credit to trusted builders with limits and due dates, and track what you owe suppliers.</p></article>
-          <article class="shop reveal"><span class="ico"><svg><use href="#i-pill"/></svg></span><h3>Pharmacies &amp; drug shops</h3><p>Know exactly what is on the shelf, count stock regularly and see every sale by staff member.</p></article>
-          <article class="shop reveal"><span class="ico"><svg><use href="#i-phone"/></svg></span><h3>Phone &amp; electronics shops</h3><p>Sell accessories and airtime, and charge for repairs as services with the price agreed at the counter.</p></article>
-          <article class="shop reveal"><span class="ico"><svg><use href="#i-shirt"/></svg></span><h3>Boutiques &amp; fashion</h3><p>Discounts with limits, returns handled properly, and receipts sent to customers on WhatsApp.</p></article>
-          <article class="shop reveal"><span class="ico"><svg><use href="#i-scissors"/></svg></span><h3>Salons &amp; barbers</h3><p>Sell services and products together and see what each stylist brought in today.</p></article>
-          <article class="shop reveal"><span class="ico"><svg><use href="#i-truck"/></svg></span><h3>Wholesalers &amp; distributors</h3><p>Sell to shops and walk-in buyers at different prices, with credit limits and wholesale prices that apply automatically.</p></article>
+          <article class="shop reveal"><h3>Supermarkets &amp; general stores</h3><p>Hundreds of fast-moving items, barcode scanning and low-stock alerts before the shelf runs dry.</p></article>
+          <article class="shop reveal"><h3>Hardware shops</h3><p>Sell on credit to trusted builders with limits and due dates, and track what you owe suppliers.</p></article>
+          <article class="shop reveal"><h3>Pharmacies &amp; drug shops</h3><p>Know exactly what is on the shelf, count stock regularly and see every sale by staff member.</p></article>
+          <article class="shop reveal"><h3>Phone &amp; electronics shops</h3><p>Sell accessories and airtime, and charge for repairs as services with the price agreed at the counter.</p></article>
+          <article class="shop reveal"><h3>Boutiques &amp; fashion</h3><p>Discounts with limits, returns handled properly, and receipts sent to customers on WhatsApp.</p></article>
+          <article class="shop reveal"><h3>Salons &amp; barbers</h3><p>Sell services and products together and see what each stylist brought in today.</p></article>
+          <article class="shop reveal"><h3>Wholesalers &amp; distributors</h3><p>Sell to shops and walk-in buyers at different prices, with credit limits and wholesale prices that apply automatically.</p></article>
           <article class="shop shop-cta reveal"><h3>Don't see your shop?</h3><p>If you sell over a counter, it will work. Ask us on WhatsApp.</p><a class="btn btn-soft" href="https://wa.me/256742226839?text=Hi%20StockDesk%2C%20will%20it%20work%20for%20my%20shop%3F" target="_blank" rel="noopener"><svg style="color:#25d366"><use href="#i-wa"/></svg>Ask us</a></article>
         </div>
       </div>
@@ -605,22 +594,19 @@
     <section class="section local ink">
       <div class="container local-grid">
         <div class="reveal">
-          <span class="eyebrow" data-i18n="local.eyebrow">Made here</span>
-          <h2 style="font-size:clamp(2rem,4.4vw,3.25rem);margin-top:16px" data-i18n="local.h2" data-i18n-html>Built in Uganda,<br />for shops in Uganda.</h2>
-          <p style="margin-top:18px;color:var(--on-ink-2);font-size:1.1rem;max-width:520px" data-i18n="local.p">Not a foreign system with the currency changed. StockDesk speaks shillings, Mobile Money and WhatsApp from day one.</p>
+          <h2 style="font-size:clamp(2rem,4.2vw,3.1rem)" data-i18n="local.h2">Made in Uganda.</h2>
+          <p style="margin-top:18px;color:var(--on-ink-2);font-size:1.1rem;max-width:520px" data-i18n="local.p">StockDesk works in shillings, takes Mobile Money and sends receipts on WhatsApp from the first day.</p>
           <ul class="local-list">
-            <li><h3><svg><use href="#i-coins"/></svg>Shillings everywhere</h3><p>Prices, receipts and reports in UGX, on Kampala time.</p></li>
-            <li><h3><svg><use href="#i-wallet"/></svg>Mobile Money built in</h3><p>Take MoMo and Airtel Money at the till, and pay for StockDesk the same way.</p></li>
-            <li><h3><svg><use href="#i-phone"/></svg>No new hardware</h3><p>Use the phone, tablet or computer you have. Add it to your home screen like an app.</p></li>
-            <li><h3><svg><use href="#i-chat"/></svg>Help on WhatsApp</h3><p>Talk to a real person in English or Luganda when you need help.</p></li>
+            <li><h3>Shillings everywhere</h3><p>Prices, receipts and reports in UGX, on Kampala time.</p></li>
+            <li><h3>Mobile Money built in</h3><p>Take MoMo and Airtel Money at the till, and pay for StockDesk the same way.</p></li>
+            <li><h3>No new hardware</h3><p>Use the phone, tablet or computer you have. Add it to your home screen like an app.</p></li>
+            <li><h3>Help on WhatsApp</h3><p>Talk to a real person in English or Luganda when you need help.</p></li>
           </ul>
         </div>
         <div class="local-phone reveal">
           <div class="phone">
             <img src="assets/shots/phone-dashboard-dark.webp" width="780" height="1688" loading="lazy" alt="StockDesk dashboard on a phone" />
           </div>
-          <div class="float"><svg><use href="#i-bell"/></svg><div><b>3 items low on stock</b><span>Cooking Oil, Tea Leaves, Toilet Paper</span></div></div>
-          <div class="float two"><svg><use href="#i-sync"/></svg><div><b>Sales synced</b><span>Back online, 3 sent</span></div></div>
         </div>
       </div>
     </section>
@@ -628,10 +614,9 @@
     <!-- ============ STEPS ============ -->
     <section class="section" id="start">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow" data-i18n="steps.eyebrow">Getting started</span>
-          <h2 data-i18n="steps.h2">Selling by this afternoon.</h2>
-          <p data-i18n="steps.p">No installer, no technician, no training course. Three steps and your counter is live.</p>
+        <div class="section-head center ledger reveal">
+          <h2 data-i18n="steps.h2">Start selling today.</h2>
+          <p data-i18n="steps.p">Three steps. You don't need a technician or any training.</p>
         </div>
         <div class="steps">
           <div class="step reveal"><span class="time" data-i18n="steps.t1">2 minutes</span><h3 data-i18n="steps.h1">Create your shop</h3><p data-i18n="steps.p1">Sign up with your email and shop name. Your first month starts right away, free.</p></div>
@@ -644,14 +629,13 @@
     <!-- ============ PRICING ============ -->
     <section class="section" id="pricing" style="padding-top:24px">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow" data-i18n="price.eyebrow">Pricing</span>
+        <div class="section-head center ledger reveal">
           <h2 data-i18n="price.h2">Try everything free for a month.</h2>
           <p data-i18n="price.p">Then choose the plan that fits your shop. Simple monthly prices in shillings, no setup fees, cancel any time.</p>
         </div>
 
         <div class="trial reveal">
-          <div class="big">1 month<small>free</small></div>
+          <div class="big ledger-total">1 month<small>free</small></div>
           <div><h3 data-i18n="trial.h3">Every feature, every new shop</h3><p data-i18n="trial.p">No card and no Mobile Money needed to start. We remind you before the month ends.</p></div>
           <a class="btn btn-primary" href="https://app.stockdeskinventory.com/login?mode=signup"><span data-i18n="cta.short">Start free month</span> <svg class="btn-arrow"><use href="#i-arrow"/></svg></a>
         </div>
@@ -665,29 +649,29 @@
             <p class="after">after your free month</p>
             <a class="btn btn-soft" href="https://app.stockdeskinventory.com/login?mode=signup">Start free</a>
             <ul>
-              <li><svg><use href="#i-check"/></svg><span><b>Owner + 2 staff</b> logins</span></li>
-              <li><svg><use href="#i-check"/></svg>Point of sale with offline selling</li>
-              <li><svg><use href="#i-check"/></svg>Stock, low-stock alerts and stock counts</li>
-              <li><svg><use href="#i-check"/></svg>Receipts on any printer or WhatsApp</li>
-              <li><svg><use href="#i-check"/></svg>Sales and profit reports</li>
-              <li><svg><use href="#i-check"/></svg>Retail, wholesale and loyalty prices</li>
+              <li><span><b>Owner + 2 staff</b> logins</span></li>
+              <li>Point of sale with offline selling</li>
+              <li>Stock, low-stock alerts and stock counts</li>
+              <li>Receipts on any printer or WhatsApp</li>
+              <li>Sales and profit reports</li>
+              <li>Retail, wholesale and loyalty prices</li>
             </ul>
           </div>
 
           <div class="plan featured reveal">
-            <span class="flag">Most popular</span>
+            <span class="flag">Best for most shops</span>
             <h3>Growth</h3>
             <p class="for">For a busy shop with a team, customers on credit and regular suppliers.</p>
             <div class="price"><span class="cur">UGX</span><span class="amt num">30,000</span><span class="per">/ month</span></div>
             <p class="after">after your free month</p>
             <a class="btn btn-primary" href="https://app.stockdeskinventory.com/login?mode=signup">Start free</a>
             <ul>
-              <li><svg><use href="#i-check"/></svg><span><b>Owner + 8 staff</b> logins</span></li>
-              <li><svg><use href="#i-check"/></svg>Everything in Starter</li>
-              <li><svg><use href="#i-check"/></svg>Customer credit and WhatsApp reminders</li>
-              <li><svg><use href="#i-check"/></svg>Suppliers, purchases and expenses</li>
-              <li><svg><use href="#i-check"/></svg>Excel import and export</li>
-              <li><svg><use href="#i-check"/></svg>Priority help on WhatsApp</li>
+              <li><span><b>Owner + 8 staff</b> logins</span></li>
+              <li>Everything in Starter</li>
+              <li>Customer credit and WhatsApp reminders</li>
+              <li>Suppliers, purchases and expenses</li>
+              <li>Excel import and export</li>
+              <li>Priority help on WhatsApp</li>
             </ul>
           </div>
 
@@ -698,19 +682,19 @@
             <p class="after">after your free month</p>
             <a class="btn btn-soft" href="https://wa.me/256742226839?text=Hi%20StockDesk%2C%20I%27m%20interested%20in%20the%20Business%20plan" target="_blank" rel="noopener">Talk to us</a>
             <ul>
-              <li><svg><use href="#i-check"/></svg><span><b>Unlimited</b> staff logins</span></li>
-              <li><svg><use href="#i-check"/></svg>Everything in Growth</li>
-              <li><svg><use href="#i-check"/></svg>We load your products for you</li>
-              <li><svg><use href="#i-check"/></svg>Staff training at your shop</li>
-              <li><svg><use href="#i-check"/></svg>A direct line to the StockDesk team</li>
+              <li><span><b>Unlimited</b> staff logins</span></li>
+              <li>Everything in Growth</li>
+              <li>We load your products for you</li>
+              <li>Staff training at your shop</li>
+              <li>A direct line to the StockDesk team</li>
             </ul>
           </div>
         </div>
 
         <p class="pricing-note">
-          <span><svg><use href="#i-wallet"/></svg>Pay with MTN MoMo or Airtel Money</span>
-          <span><svg><use href="#i-shield"/></svg>Your records stay yours, always</span>
-          <span><svg><use href="#i-clock"/></svg>Cancel any time</span>
+          <span>Pay with MTN MoMo or Airtel Money</span>
+          <span>Your records stay yours, always</span>
+          <span>Cancel any time</span>
         </p>
       </div>
     </section>
@@ -718,9 +702,8 @@
     <!-- ============ FAQ ============ -->
     <section class="section" id="faq" style="padding-top:24px">
       <div class="container faq-grid">
-        <div class="section-head reveal">
-          <span class="eyebrow" data-i18n="faq.eyebrow">Questions</span>
-          <h2 data-i18n="faq.h2">Good questions, straight answers.</h2>
+        <div class="section-head ledger reveal">
+          <h2 data-i18n="faq.h2">Common questions</h2>
           <p data-i18n="faq.p">Can't find what you need? Message us and a person will answer, usually within the hour during the day.</p>
           <div class="faq-help">
             <a class="btn btn-soft" href="https://wa.me/256742226839" target="_blank" rel="noopener"><svg style="color:#25d366"><use href="#i-wa"/></svg>WhatsApp us</a>
@@ -774,7 +757,6 @@
       <div class="container">
         <div class="custom-card reveal">
           <div>
-            <span class="eyebrow" data-i18n="custom.eyebrow">Custom software</span>
             <h2 data-i18n="custom.h2">Need something built just for your business?</h2>
             <p data-i18n="custom.p">The team behind StockDesk also builds custom software. Tell us how your business works and we will design, build and support a system that fits it.</p>
             <div class="hero-ctas">
@@ -783,9 +765,9 @@
             </div>
           </div>
           <ul class="custom-list">
-            <li><span class="ico"><svg><use href="#i-layers"/></svg></span><div><b>Business systems</b><span>Sales, stock, orders, schools, clinics, SACCOs or field teams, built around the way you already work.</span></div></li>
-            <li><span class="ico"><svg><use href="#i-code"/></svg></span><div><b>Web and mobile apps</b><span>Customer-facing apps, booking and ordering systems, dashboards and company websites.</span></div></li>
-            <li><span class="ico"><svg><use href="#i-plug"/></svg></span><div><b>Integrations</b><span>Connect Mobile Money, SMS, WhatsApp, accounting tools or StockDesk itself to the rest of your business.</span></div></li>
+            <li><div><b>Business systems</b><span>Sales, stock, orders, schools, clinics, SACCOs or field teams, built around the way you already work.</span></div></li>
+            <li><div><b>Web and mobile apps</b><span>Customer-facing apps, booking and ordering systems, dashboards and company websites.</span></div></li>
+            <li><div><b>Integrations</b><span>Connect Mobile Money, SMS, WhatsApp, accounting tools or StockDesk itself to the rest of your business.</span></div></li>
           </ul>
         </div>
       </div>
@@ -795,8 +777,8 @@
     <section class="final">
       <div class="container">
         <div class="final-card ink reveal">
-          <h2 data-i18n="final.h2" data-i18n-html>Know your numbers by closing time <span class="grad">tonight.</span></h2>
-          <p data-i18n="final.p">Create your shop in two minutes. Your first month is on us.</p>
+          <h2 data-i18n="final.h2">Try StockDesk free for a month.</h2>
+          <p data-i18n="final.p">Setting up your shop takes about two minutes, and you don't need a card.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary btn-lg" href="https://app.stockdeskinventory.com/login?mode=signup"><span data-i18n="cta.main">Start your free month</span> <svg class="btn-arrow"><use href="#i-arrow"/></svg></a>
             <a class="btn btn-ghost btn-lg" href="https://wa.me/256742226839?text=Hi%20StockDesk%2C%20please%20help%20me%20get%20started" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg> <span data-i18n="final.help">Get help setting up</span></a>
@@ -863,6 +845,6 @@
 
   <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
   <script defer src="/_vercel/insights/script.js"></script>
-  <script src="main.js?v=5" defer></script>
+  <script src="main.js?v=6" defer></script>
 </body>
 </html>
