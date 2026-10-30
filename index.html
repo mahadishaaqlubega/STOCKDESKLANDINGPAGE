@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StockDesk: Point of sale and stock control for shops in Uganda</title>
-  <meta name="description" content="Sell from any phone or computer, watch stock update with every sale, collect what customers owe and see your real profit. Built for shops in Uganda. First month free." />
+  <title>StockDesk: POS and Stock Management Software for Shops in Uganda</title>
+  <meta name="description" content="Point of sale, stock control, customer credit and quotations for shops in Uganda. Works offline, takes Mobile Money and sends receipts on WhatsApp. First month free." />
   <link rel="canonical" href="https://www.stockdeskinventory.com/" />
   <meta name="theme-color" content="#0b1510" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -13,14 +13,18 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="StockDesk" />
   <meta property="og:url" content="https://www.stockdeskinventory.com/" />
-  <meta property="og:title" content="StockDesk: Every sale counted. Every shilling accounted for." />
-  <meta property="og:description" content="Point of sale, stock, credit and profit in one app for shops in Uganda. Works offline. First month free." />
+  <meta property="og:title" content="StockDesk: the till, stock book and profit report for your shop" />
+  <meta property="og:description" content="Point of sale, stock, credit and quotations for shops in Uganda. Works offline. First month free." />
+  <meta property="og:image:alt" content="StockDesk dashboard and point of sale" />
   <meta property="og:image" content="https://www.stockdeskinventory.com/assets/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="StockDesk: the till, stock book and profit report for your shop" />
+  <meta name="twitter:description" content="Point of sale, stock, credit and quotations for shops in Uganda. Works offline. First month free." />
   <meta name="twitter:image" content="https://www.stockdeskinventory.com/assets/og.png" />
 
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
@@ -28,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700&display=swap" />
   <link rel="preload" as="image" href="assets/shots/dashboard-dark.webp" />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
   <script>
     document.documentElement.classList.remove('no-js');
     try { var t = localStorage.getItem('sd-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -42,8 +46,13 @@
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web, Android, iOS, Windows",
     "url": "https://www.stockdeskinventory.com/",
-    "description": "Point of sale and stock control for shops in Uganda. Works offline, prices in UGX, receipts on any printer or WhatsApp.",
-    "offers": { "@type": "Offer", "price": "15000", "priceCurrency": "UGX", "description": "Starter plan, monthly, after a 1-month free trial" }
+    "description": "Point of sale, stock control, customer credit and quotations for shops in Uganda. Works offline, prices in UGX, receipts on any printer or WhatsApp.",
+    "featureList": ["Point of sale that works offline", "Cash, Mobile Money, card, credit and split payments", "Stock levels and low-stock warnings", "Customer credit with WhatsApp reminders", "Quotations and proforma invoices", "Till cash count", "Retail, wholesale and loyalty prices", "Sales and profit reports"],
+    "offers": [
+      { "@type": "Offer", "name": "Starter", "price": "15000", "priceCurrency": "UGX", "description": "Monthly, after a 1-month free trial. Owner and 2 staff." },
+      { "@type": "Offer", "name": "Growth", "price": "30000", "priceCurrency": "UGX", "description": "Monthly, after a 1-month free trial. Owner and 8 staff." },
+      { "@type": "Offer", "name": "Business", "price": "90000", "priceCurrency": "UGX", "description": "Monthly, after a 1-month free trial. Unlimited staff." }
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -113,6 +122,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Each staff member has their own login, and every sale is tied to them. You set the biggest discount cashiers can give, StockDesk refuses sales below cost, and the activity log shows who changed what."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I send quotations or proforma invoices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Make a quotation or proforma invoice from your products, send it as a PDF on WhatsApp, and open it in the till when the customer pays. It becomes a normal sale and the quote is marked as sold."
       }
     },
     {
@@ -549,11 +566,15 @@
             <h3>Stock counts and returns</h3>
             <p>Count the shelf, see what is missing, and handle returns so stock and money stay right.</p>
           </article>
-          <article class="card small span-3 reveal">
+          <article class="card small span-2 reveal">
+            <h3>Quotations and proforma invoices</h3>
+            <p>Send a quote as a PDF on WhatsApp, then sell it from the till when the customer pays.</p>
+          </article>
+          <article class="card small span-2 reveal">
             <h3>Services as well as goods</h3>
             <p>Repairs, salon work, delivery or labour, with no stock to track. Use a fixed price or agree one at the counter.</p>
           </article>
-          <article class="card small span-3 reveal">
+          <article class="card small span-2 reveal">
             <h3>Till count at closing</h3>
             <p>Open the till with a float and count it at the end of the day. StockDesk shows straight away whether the cash is short or over.</p>
           </article>
@@ -744,6 +765,10 @@
             <div class="ans"><p>Each staff member has their own login, and every sale is tied to them. You set the biggest discount cashiers can give, StockDesk refuses sales below cost, and the activity log shows who changed what.</p></div>
           </details>
           <details>
+            <summary>Can I send quotations or proforma invoices?<span class="pm" aria-hidden="true"></span></summary>
+            <div class="ans"><p>Yes. Make a quotation or proforma invoice from your products, send it as a PDF on WhatsApp, and open it in the till when the customer pays. It becomes a normal sale and the quote is marked as sold. <a href="quotation-proforma-invoice" style="color:var(--accent);text-decoration:underline">How quotes work</a>.</p></div>
+          </details>
+          <details>
             <summary>Who can see my shop's data?<span class="pm" aria-hidden="true"></span></summary>
             <div class="ans"><p>Only the people you add to your shop, and only what their role allows. We don't sell your data. Read more in our <a href="privacy" style="color:var(--accent);text-decoration:underline">privacy policy</a>.</p></div>
           </details>
@@ -807,6 +832,14 @@
           </ul>
         </div>
         <div>
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="pos-system-uganda">POS system for Uganda</a></li>
+            <li><a href="inventory-software-uganda">Stock management software</a></li>
+            <li><a href="quotation-proforma-invoice">Quotations and proforma invoices</a></li>
+          </ul>
+        </div>
+        <div>
           <h4>Account</h4>
           <ul>
             <li><a href="https://app.stockdeskinventory.com/login?mode=signup">Start free month</a></li>
@@ -845,6 +878,6 @@
 
   <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
   <script defer src="/_vercel/insights/script.js"></script>
-  <script src="main.js?v=6" defer></script>
+  <script src="main.js?v=7" defer></script>
 </body>
 </html>

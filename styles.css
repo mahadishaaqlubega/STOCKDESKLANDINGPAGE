@@ -543,7 +543,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- footer ---------- */
 .footer { border-top: 1px solid var(--line); padding: 64px 0 36px; font-size: 14.5px; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.3fr repeat(4, 1fr); gap: 36px; }
 .footer .brand { color: var(--text); }
 .footer-about { margin-top: 14px; color: var(--text-2); max-width: 300px; }
 .footer h4 { font-family: var(--font); font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: .02em; margin-bottom: 14px; }
@@ -758,3 +758,23 @@ ul { margin: 0; padding: 0; list-style: none; }
 .trial .big.ledger-total { padding-bottom: 6px; }
 .till-total b { border-bottom: 3px double var(--brass); padding-bottom: 2px; }
 .receipt .r.total b:last-child { border-bottom: 3px double #111; }
+
+/* ---------- search landing pages (pos-system-uganda etc.) ---------- */
+.legal-hero h1 { max-width: 820px; }
+.article-intro { max-width: 640px; font-size: 1.12rem; line-height: 1.6; }
+.article-ctas { justify-content: flex-start; margin-top: 28px; }
+.article { padding-top: 56px; }
+.article p, .article li { font-size: 16.5px; line-height: 1.7; }
+.article li + li { margin-top: 8px; }
+.article-shot { margin: 0 0 8px; border-radius: 16px; padding: 6px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-md); }
+.article-shot img { width: 100%; border-radius: 11px; }
+.article .faq-list { margin-top: 8px; }
+.article .faq-list summary { font-size: 16.5px; }
+.article .faq-list .ans p { font-size: 15.5px; }
+.article-cta { margin-top: 56px; padding: 32px; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--line); }
+.article-cta h2 { margin: 0; }
+.article-cta h2::after { content: ""; display: block; width: 52px; height: 5px; margin-top: 18px; border-top: 1px solid var(--brass); border-bottom: 1px solid var(--brass); }
+.article-cta p { margin: 16px 0 22px; }
+.article-cta .btn { color: var(--btn-fg); text-decoration: none; }
+.article-related { margin-top: 32px; font-size: 14.5px !important; color: var(--muted) !important; }
+@media (max-width: 767px) { .article-ctas .btn { width: 100%; } .article-cta { padding: 24px 20px; } }
