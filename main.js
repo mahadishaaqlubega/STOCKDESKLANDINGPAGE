@@ -98,7 +98,7 @@
     modal.addEventListener("close", function () { video.pause(); });
   } else {
     document.querySelectorAll("[data-video]").forEach(function (btn) {
-      btn.addEventListener("click", function () { window.location.href = "assets/video/sale.webm"; });
+      btn.addEventListener("click", function () { window.location.href = "assets/video/sale.mp4?v=9"; });
     });
   }
 
@@ -109,7 +109,7 @@
     "hero.pill": "Buli dduuka eppya lifuna omwezi ogusooka ogw'obwereere",
     "hero.h1": "Kasanduuko k'ensimbi, ekitabo kya sitooki n'alipoota y'amagoba g'edduuka lyo.",
     "hero.sub": "Wandiika buli kitundiddwa, manya sitooki gy'olina, era olabe amagoba g'ofunye leero. StockDesk ekola ku ssimu oba kompyuta gy'olina, ne bwe wataba yintaneti.",
-    "hero.watch": "Laba bw'etunda mu sikonda 40", "hero.n1": "Tewetaaga kaadi", "hero.n2": "Otandika mu ssaawa ntono", "hero.n3": "Sasula oluvannyuma ne MTN MoMo oba Airtel Money",
+    "hero.watch": "Laba bw'etunda mu sikonda 30", "hero.n1": "Tewetaaga kaadi", "hero.n2": "Otandika mu ssaawa ntono", "hero.n3": "Sasula oluvannyuma ne MTN MoMo oba Airtel Money",
     "facts.1": "Etunda ne bwe wataba yintaneti", "facts.2": "Ssente enkalu, Mobile Money, kaadi, ebbanja oba okugabanya",
     "facts.3": "Lisiiti ku 58mm, 80mm, A4 oba WhatsApp", "facts.4": "Leeta olukalala lw'ebintu byo okuva mu Excel", "facts.5": "Ekola ku ssimu gy'olina",
     "tour.h2": "App emu ey'edduuka lyonna.",
