@@ -215,6 +215,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 .nav-inner { display: flex; align-items: center; gap: 24px; height: 68px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 650; font-size: 18px; letter-spacing: -0.02em; }
 .brand img { width: 30px; height: 30px; }
+/* Two-colour name like the logo: green Stock, brass Desk. Brighter on the ink nav, deeper on the cream footer. */
+.brand .b-stock { color: #4fb57e; }
+.brand .b-desk { color: #d4b470; }
+.footer .brand .b-stock { color: var(--accent); }
+.footer .brand .b-desk { color: var(--brass); }
 .nav-links { display: flex; gap: 4px; margin-left: 16px; }
 .nav-links a { padding: 8px 12px; border-radius: 8px; font-size: 14.5px; font-weight: 500; color: #b9c2ba; transition: color .2s; }
 .nav-links a:hover { color: #fff; }
